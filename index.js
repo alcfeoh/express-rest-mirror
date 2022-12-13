@@ -2,12 +2,13 @@ const express = require('express');
 const app = express();
 var cors = require('cors');
 const port = 80;
-const path = require('path');
 
+app.use(express.json());
 app.use(cors());
 
 app.post('/mirror', (req, res) => {
-  res.send(req.data);
+  console.log(req.body);
+  res.end(JSON.stringify(req.body));
 });
 
 app.listen(port, () => {
