@@ -1,0 +1,12 @@
+{
+  "name": "express-rest-mirror",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "x",
+    "express": "^4.17.1"
+  }
+}
